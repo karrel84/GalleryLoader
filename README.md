@@ -24,23 +24,6 @@ private GalleryLoader.OnImageSelectedListener onImageSelectedListener = new Gall
 * Manifest.permission.WRITE_EXTERNAL_STORAGE
 
 
-# 환경설정 - JitPack
-* root build.gradle에 jitpack을 추가합니다.
-```java
- allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-```
-* app build.gradle의 dependencies에 라이브러리 주소를 추가합니다.
-```java
-	dependencies {
-	        compile 'com.github.karrel84:RellLog:1.0.5'
-	}
-```
-
 # 라이센스
  ```code
 Copyright 2017 Karrel
