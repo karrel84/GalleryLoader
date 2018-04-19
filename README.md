@@ -1,16 +1,19 @@
 # GalleryLoader
 * 갤러리 로더 입니다.
 * 아래와 같이 빌더패턴을 이용해 GalleryLoader의 객체를 생성합니다.
-``` GalleryLoader loader = new GalleryLoader.Builder(MainActivity.this)
+```java
+GalleryLoader loader = new GalleryLoader.Builder(MainActivity.this)
                         .setOnImageSelectedListener(onImageSelectedListener)
                         .create();
 ```
 * 갤러리 로더 실행
-``` loader.show(getSupportFragmentManager());
+``` java
+loader.show(getSupportFragmentManager());
 ```
 
 * 아래의 리스너를 통해 이미지의 URI가 콜백됩니다.
-```private GalleryLoader.OnImageSelectedListener onImageSelectedListener = new GalleryLoader.OnImageSelectedListener() {
+```java
+private GalleryLoader.OnImageSelectedListener onImageSelectedListener = new GalleryLoader.OnImageSelectedListener() {
         @Override
         public void onImageSelected(Uri uri) {
 		...
